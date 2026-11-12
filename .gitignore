@@ -1,0 +1,12 @@
+.env
+.venv/
+__pycache__/
+.DS_Store
+
+# BEIR dataset, downloaded by main.py on first run
+data/
+
+# Document embeddings (~120 MB); recomputed by main.py.
+# The hypothetical documents (cache/*_hypothetical_docs.json) ARE kept:
+# they cost money to generate and make every run use the same text.
+cache/*.npy
